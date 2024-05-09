@@ -12,7 +12,7 @@
 
 在对输出结果中分类错误的样本进行人工分析时，可以建立一个表格来记录每一个分类错误的具体信息，例如某些图像是模糊的，或者是把狗识别成了猫等，并统计属于不同错误类型的错误数量。这样，分类结果会更加清晰。
 
-![Error-analysis-table](https://raw.githubusercontent.com/bighuang624/Andrew-Ng-Deep-Learning-notes/master/docs/Structuring_Machine_Learning_Projects/Error-analysis-table.png)
+![Error-analysis-table](https://raw.githubusercontent.com/jxnu-liguobin/Andrew-Ng-Deep-Learning-notes/master/docs/Structuring_Machine_Learning_Projects/Error-analysis-table.png)
 
 总结一下，进行错误分析时，你应该观察错误标记的例子，看看假阳性和假阴性，统计属于不同错误类型的错误数量。在这个过程中，你可能会得到启发，归纳出新的错误类型。总之，通过统计不同错误标记类型占总数的百分比，有助于发现哪些问题亟待解决，或者提供构思新优化方向的灵感。
 
@@ -54,7 +54,7 @@
 
 人类水平误差、*训练集*错误率、*训练-验证集*错误率、*验证集*错误率、*测试集*错误率之间的差值所反映的问题如下图所示：
 
-![Analysis-With-Data-Mismatch](https://raw.githubusercontent.com/bighuang624/Andrew-Ng-Deep-Learning-notes/master/docs/Structuring_Machine_Learning_Projects/Analysis-With-Data-Mismatch.png)
+![Analysis-With-Data-Mismatch](https://raw.githubusercontent.com/jxnu-liguobin/Andrew-Ng-Deep-Learning-notes/master/docs/Structuring_Machine_Learning_Projects/Analysis-With-Data-Mismatch.png)
 
 ### 处理方法
 
@@ -77,7 +77,7 @@
 
 你也可以不止加入一个新的输出层，而是多向神经网络加几个新层。
 
-![Tranfer-Learning](https://raw.githubusercontent.com/bighuang624/Andrew-Ng-Deep-Learning-notes/master/docs/Structuring_Machine_Learning_Projects/Tranfer-Learning.png)
+![Tranfer-Learning](https://raw.githubusercontent.com/jxnu-liguobin/Andrew-Ng-Deep-Learning-notes/master/docs/Structuring_Machine_Learning_Projects/Tranfer-Learning.png)
 
 在下述场合进行迁移学习是有意义的：
 
@@ -93,7 +93,7 @@
 
 $$y = \begin{bmatrix} 0 \\\ 1 \\\ 1 \\\ 0 \end{bmatrix}\quad$$
 
-![Multi-Task-Learning](https://raw.githubusercontent.com/bighuang624/Andrew-Ng-Deep-Learning-notes/master/docs/Structuring_Machine_Learning_Projects/Multi-Task-Learning.png)
+![Multi-Task-Learning](https://raw.githubusercontent.com/jxnu-liguobin/Andrew-Ng-Deep-Learning-notes/master/docs/Structuring_Machine_Learning_Projects/Multi-Task-Learning.png)
 
 多任务学习模型的成本函数为：
 
@@ -113,7 +113,7 @@ $$L(\hat y\_j^{(i)}, y\_j^{(i)}) = -y\_j^{(i)} log \hat y\_j^{(i)} - (1 -y\_j^{(
 2. *通常*，每个任务的数据量接近；
 3. 能够训练一个足够大的神经网络，以同时做好所有的工作。多任务学习会降低性能的唯一情况（即和为每个任务训练单个神经网络相比性能更低的情况）是神经网络还不够大。
 
-![Shared-Representation](https://raw.githubusercontent.com/bighuang624/Andrew-Ng-Deep-Learning-notes/master/docs/Structuring_Machine_Learning_Projects/Shared-Representation.png)
+![Shared-Representation](https://raw.githubusercontent.com/jxnu-liguobin/Andrew-Ng-Deep-Learning-notes/master/docs/Structuring_Machine_Learning_Projects/Shared-Representation.png)
 
 在多任务深度网络中，低层次信息的共享有助于减少计算量，同时共享表示层可以使得几个有共性的任务更好的结合相关性信息，任务特定层则可以单独建模任务特定的信息，实现共享信息和任务特定信息的统一。
 
@@ -127,7 +127,7 @@ $$L(\hat y\_j^{(i)}, y\_j^{(i)}) = -y\_j^{(i)} log \hat y\_j^{(i)} - (1 -y\_j^{(
 
 而如果数据集规模适中，还是可以使用流水线方法，但是可以混合端到端深度学习，通过神经网络绕过某些模块，直接输出某些特征。
 
-![End-to-end-Deep-Learning](https://raw.githubusercontent.com/bighuang624/Andrew-Ng-Deep-Learning-notes/master/docs/Structuring_Machine_Learning_Projects/End-to-end-Deep-Learning.png)
+![End-to-end-Deep-Learning](https://raw.githubusercontent.com/jxnu-liguobin/Andrew-Ng-Deep-Learning-notes/master/docs/Structuring_Machine_Learning_Projects/End-to-end-Deep-Learning.png)
 
 ### 优点与缺点
 

@@ -91,7 +91,7 @@ $$F1 = \frac{2}{\frac{1}{P}+\frac{1}{R}} = \frac{2PR}{P+R}$$
 
 很多机器学习模型的诞生是为了取代人类的工作，因此其表现也会跟人类表现水平作比较。
 
-![Bayes-Error](https://raw.githubusercontent.com/bighuang624/Andrew-Ng-Deep-Learning-notes/master/docs/Structuring_Machine_Learning_Projects/Bayes-Optimal-Error.png)
+![Bayes-Error](https://raw.githubusercontent.com/jxnu-liguobin/Andrew-Ng-Deep-Learning-notes/master/docs/Structuring_Machine_Learning_Projects/Bayes-Optimal-Error.png)
 
 上图展示了随着时间的推进，机器学习系统和人的表现水平的变化。一般的，当机器学习超过人的表现水平后，它的进步速度逐渐变得缓慢，最终性能无法超过某个理论上限，这个上限被称为**贝叶斯最优误差（Bayes Optimal Error）**。
 
@@ -128,7 +128,7 @@ $$F1 = \frac{2}{\frac{1}{P}+\frac{1}{R}} = \frac{2PR}{P+R}$$
 1. 算法对训练集的拟合很好，可以看作可避免偏差很低；
 2. 推广到验证集和测试集效果也很好，即方差不是很大。
 
-![Human-level](https://raw.githubusercontent.com/bighuang624/Andrew-Ng-Deep-Learning-notes/master/docs/Structuring_Machine_Learning_Projects/Human-level.png)
+![Human-level](https://raw.githubusercontent.com/jxnu-liguobin/Andrew-Ng-Deep-Learning-notes/master/docs/Structuring_Machine_Learning_Projects/Human-level.png)
 
 根据正交化的思想，我们有一些措施可以独立地优化二者之一。
 
