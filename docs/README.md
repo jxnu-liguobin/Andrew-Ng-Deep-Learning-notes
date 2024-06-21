@@ -11,4 +11,3 @@
 ## Github
 
 [原项目地址](https://github.com/bighuang624/Andrew-Ng-Deep-Learning-notes)
-[项目地址](https://github.com/jxnu-liguobin/Andrew-Ng-Deep-Learning-notes)
